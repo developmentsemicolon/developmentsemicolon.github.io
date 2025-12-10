@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "technologies": "Tecnologías",
+    "cases": "Casos de Éxito",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Transformando Ideas en",
+    "titleHighlight": "Realidad Digital",
+    "subtitle": "Desarrollo Full Stack de alto rendimiento para impulsar tu negocio",
+    "cta1": "Contáctanos",
+    "cta2": "Nuestros Servicios"
+  },
+  "stats": {
+    "experience": "Años de Experiencia",
+    "projects": "Proyectos Completados",
+    "clients": "Clientes Satisfechos",
+    "commitment": "Compromiso"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Ofrecemos soluciones completas de desarrollo de software para impulsar tu negocio",
+    "web": {
+      "title": "Desarrollo Web",
+      "description": "Creamos aplicaciones web modernas y responsivas utilizando las últimas tecnologías del mercado.",
+      "items": ["Sitios Corporativos", "E-commerce", "Aplicaciones Web"]
+    },
+    "mobile": {
+      "title": "Apps Móviles",
+      "description": "Desarrollo de aplicaciones móviles nativas e híbridas para iOS y Android.",
+      "items": ["Apps Nativas", "Apps Híbridas", "PWA"]
+    },
+    "backend": {
+      "title": "Backend & API",
+      "description": "Arquitectura robusta y escalable para tus aplicaciones con APIs RESTful.",
+      "items": ["APIs RESTful", "Microservicios", "Soluciones Cloud"]
+    },
+    "ai": {
+      "title": "Soluciones de IA",
+      "description": "Soluciones inteligentes usando LangChain, RAG y bases de datos vectoriales para aplicaciones con contexto.",
+      "items": ["Sistemas RAG", "Integración LLM", "Búsqueda Semántica"]
+    }
+  },
+  "technologies": {
+    "title": "Tecnologías & Habilidades",
+    "subtitle": "Herramientas y frameworks modernos que dominamos",
+    "categories": {
+      "ai": "IA/ML",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Base de Datos",
+      "cloud": "Cloud",
+      "mobile": "Mobile"
+    }
+  },
+  "successCases": {
+    "title": "Casos de Éxito",
+    "subtitle": "Descubre algunos de nuestros proyectos más impactantes y cómo ayudamos a nuestros clientes a alcanzar sus objetivos",
+    "viewWebsite": "Visitar Sitio"
+  },
+  "about": {
+    "title": "Acerca de Nosotros",
+    "description": "Somos una empresa especializada en desarrollo full stack, enfocada en crear soluciones tecnológicas innovadoras y de alta calidad. Nuestro equipo está compuesto por profesionales experimentados y apasionados por la tecnología.",
+    "feature1": {
+      "title": "Experiencia en Proyectos Complejos",
+      "description": "Desarrollamos soluciones para diversos sectores y tamaños de empresas."
+    },
+    "feature2": {
+      "title": "Metodologías Ágiles",
+      "description": "Utilizamos metodologías ágiles para entregas rápidas y eficientes."
+    },
+    "feature3": {
+      "title": "Soporte Técnico Especializado",
+      "description": "Ofrecemos soporte técnico especializado para todos nuestros clientes."
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos listos para transformar tu idea en realidad. ¡Contáctanos!",
+    "info": {
+      "title": "Información de Contacto",
+      "address": "Dirección",
+      "addressValue": "São Paulo, SP - Brasil",
+      "email": "Email",
+      "phone": "Teléfono",
+      "social": "Redes Sociales"
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "about": "Acerca de",
+    "aboutText": "Empresa especializada en desarrollo full stack, creando soluciones tecnológicas innovadoras.",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "social": "Redes Sociales",
+    "rights": "Todos los derechos reservados."
+  }
+}
+

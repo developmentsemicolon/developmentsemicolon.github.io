@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "technologies": "Technologies",
+    "cases": "Success Cases",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Transforming Ideas into",
+    "titleHighlight": "Digital Reality",
+    "subtitle": "High-performance Software Development to boost your business",
+    "cta1": "Contact Us",
+    "cta2": "Our Services"
+  },
+  "stats": {
+    "experience": "Years of Experience",
+    "projects": "Completed Projects",
+    "clients": "Satisfied Clients",
+    "commitment": "Commitment"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We offer complete software development solutions to boost your business",
+    "web": {
+      "title": "Web Development",
+      "description": "We create modern and responsive web applications using the latest market technologies.",
+      "items": ["Corporate Websites", "E-commerce", "Web Applications"]
+    },
+    "mobile": {
+      "title": "Mobile Apps",
+      "description": "Development of native and hybrid mobile applications for iOS and Android.",
+      "items": ["Native Apps", "Hybrid Apps", "PWA"]
+    },
+    "backend": {
+      "title": "Backend & API",
+      "description": "Robust and scalable architecture for your applications with RESTful APIs.",
+      "items": ["RESTful APIs", "Microservices", "Cloud Solutions"]
+    },
+    "ai": {
+      "title": "AI Solutions",
+      "description": "Intelligent solutions using LangChain, RAG, and vector databases for context-aware applications.",
+      "items": ["RAG Systems", "LLM Integration", "Semantic Search"]
+    }
+  },
+  "technologies": {
+    "title": "Technologies & Skills",
+    "subtitle": "Modern tools and frameworks we master",
+    "categories": {
+      "ai": "AI/ML",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "cloud": "Cloud",
+      "mobile": "Mobile"
+    }
+  },
+  "successCases": {
+    "title": "Success Cases",
+    "subtitle": "Discover some of our most impactful projects and how we helped our clients achieve their goals",
+    "viewWebsite": "Visit Website"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a company specialized in Software Development, focused on creating innovative and high-quality technological solutions. Our team is composed of experienced professionals passionate about technology.",
+    "feature1": {
+      "title": "Experience in Complex Projects",
+      "description": "We develop solutions for various sectors and company sizes."
+    },
+    "feature2": {
+      "title": "Agile Methodologies",
+      "description": "We use agile methodologies for fast and efficient deliveries."
+    },
+    "feature3": {
+      "title": "Specialized Technical Support",
+      "description": "We offer specialized technical support for all our clients."
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We're ready to transform your idea into reality. Contact us!",
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "addressValue": "São Paulo, SP - Brazil",
+      "email": "Email",
+      "phone": "Phone",
+      "social": "Social Media"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "about": "About",
+    "aboutText": "Company specialized in Software Development, creating innovative technological solutions.",
+    "services": "Services",
+    "contact": "Contact",
+    "social": "Social Media",
+    "rights": "All rights reserved."
+  }
+}
+
