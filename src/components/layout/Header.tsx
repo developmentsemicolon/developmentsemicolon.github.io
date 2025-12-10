@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Menu, X, Moon, Sun, Globe } from 'lucide-react'
+import { Menu, X, Moon, Sun } from 'lucide-react'
 import LanguageSwitcher from './LanguageSwitcher'
 
 interface HeaderProps {

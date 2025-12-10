@@ -37,8 +37,30 @@ export default function SuccessCases() {
               )}
               <div className="flex flex-col items-center justify-center h-full min-h-[120px]">
                 {caseItem.id === 'goprimy' ? (
-                  <div className="w-full max-h-12 object-contain mb-4 filter grayscale group-hover:grayscale-0 transition-all duration-300">
-                    <a href="https://goprimy.com/#home" class="flex items-center space-x-4 hover:opacity-80 transition-opacity duration-200"><div class="w-11 h-11 bg-gradient-to-br from-emerald-500 via-emerald-600 to-emerald-700 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-500/30"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-6 h-6 text-white"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path><path d="M5 3v4"></path><path d="M19 17v4"></path><path d="M3 5h4"></path><path d="M17 19h4"></path></svg></div><span class="text-2xl font-black text-slate-900 tracking-tight">GoPrimy</span></a>
+                  <div className="w-full max-h-12 object-contain mb-4 flex items-center justify-center">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 via-emerald-600 to-emerald-700 rounded-lg flex items-center justify-center shadow-lg shadow-emerald-500/30">
+                        <svg 
+                          xmlns="http://www.w3.org/2000/svg" 
+                          width="20" 
+                          height="20" 
+                          viewBox="0 0 24 24" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
+                          className="w-5 h-5 text-white"
+                        >
+                          <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                          <path d="M5 3v4"></path>
+                          <path d="M19 17v4"></path>
+                          <path d="M3 5h4"></path>
+                          <path d="M17 19h4"></path>
+                        </svg>
+                      </div>
+                      <span className="text-lg font-bold text-slate-900 dark:text-slate-100 tracking-tight">GoPrimy</span>
+                    </div>
                   </div>
                 ) : (
                   <img
