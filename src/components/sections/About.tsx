@@ -106,7 +106,7 @@ export default function About() {
               />
               <line
                 x1="140"
-                y2="290"
+                y1="290"
                 x2="260"
                 y2="290"
                 stroke="#1e40af"
