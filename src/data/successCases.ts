@@ -16,6 +16,21 @@ export interface SuccessCase {
 
 export const successCases: SuccessCase[] = [
   {
+    id: 'cleanmac',
+    companyName: 'CleanMac App',
+    companyLogo: '/images/cleanmac-logo.png',
+    website: '/cleanmacapp',
+    industry: 'Desktop App',
+    projectType: 'macOS Application',
+    description: {
+      en: 'Free Mac cleanup tool with Chrome extension integration',
+      pt: 'Ferramenta gratuita de limpeza para Mac com integração de extensão Chrome',
+      es: 'Herramienta gratuita de limpieza para Mac con integración de extensión Chrome'
+    },
+    technologies: ['macOS', 'Swift', 'Chrome Extension', 'System Cleanup'],
+    featured: false
+  },
+  {
     id: 'deepread',
     companyName: 'Deepread',
     companyLogo: 'https://devlfmd.github.io/semicolon/images/deepread-logo.png',

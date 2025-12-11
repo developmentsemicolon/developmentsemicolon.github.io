@@ -320,9 +320,9 @@ export const technologies: Technology[] = [
     name: 'PostgreSQL',
     category: 'database',
     description: {
-      en: 'Advanced open-source relational database',
-      pt: 'Banco de dados relacional open-source avançado',
-      es: 'Base de datos relacional open-source avanzada'
+      en: 'Advanced  relational database',
+      pt: 'Banco de dados relacional  avançado',
+      es: 'Base de datos relacional  avanzada'
     },
     link: 'https://postgresql.org'
   },
