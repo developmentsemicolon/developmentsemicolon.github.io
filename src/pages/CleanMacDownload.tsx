@@ -6,24 +6,71 @@ import CleanMacFooter from '../components/cleanmac/Footer'
 
 type Status = 'loading' | 'success' | 'error'
 
+interface StripeSession {
+  id: string
+  payment_status: 'paid' | 'unpaid' | 'no_payment_required'
+  status: 'complete' | 'open' | 'expired'
+  error?: {
+    message: string
+  }
+}
+
 export default function CleanMacDownload() {
   const { t } = useTranslation()
   const [searchParams] = useSearchParams()
   const [status, setStatus] = useState<Status>('loading')
+  const [errorMessage, setErrorMessage] = useState<string>('')
 
   const sessionId = useMemo(() => searchParams.get('session_id') || '', [searchParams])
 
   useEffect(() => {
     if (!sessionId) {
       setStatus('error')
+      setErrorMessage('Session ID não encontrado na URL')
       return
     }
-    // Sem validação serverless: apenas confirma presença do session_id.
-    setStatus('success')
+
+    const validatePayment = async () => {
+      try {
+        const workerUrl = `https://soft-morning-9b33.developmentsemicolon.workers.dev/?session_id=${encodeURIComponent(sessionId)}`
+        const response = await fetch(workerUrl)
+
+        if (!response.ok) {
+          throw new Error(`Erro ao validar pagamento: ${response.status}`)
+        }
+
+        const data: StripeSession = await response.json()
+        // Verificar se há erro na resposta
+        if (data.error) {
+          setStatus('error')
+          setErrorMessage(data.error.message || 'Erro ao validar pagamento')
+          return
+        }
+
+        // Verificar se o pagamento foi confirmado
+        if (data.payment_status === 'paid' && data.status === 'complete') {
+          setStatus('success')
+          setErrorMessage('')
+        } else {
+          setStatus('error')
+          setErrorMessage('Pagamento não confirmado. Por favor, verifique o status do pagamento.')
+        }
+      } catch (error) {
+        console.error('Erro ao validar pagamento:', error)
+        setStatus('error')
+        setErrorMessage(
+          error instanceof Error
+            ? error.message
+            : 'Erro ao conectar com o servidor. Por favor, tente novamente.'
+        )
+      }
+    }
+
+    validatePayment()
   }, [sessionId])
 
-  const downloadUrlAppleSilicon = 'https://drive.google.com/file/d/1Yx8xj3LVSjJXyndzeEOxH1VJiOrOQ1g1/view?usp=sharing'
-  const downloadUrlIntel = 'https://drive.google.com/file/d/1os2RTMFqpP9n-gsM8IMYdXsavBSHPPXi/view?usp=sharing'
+  const downloadUrlAppleSilicon = 'https://drive.google.com/file/d/1fL-IPAgVGCaLqaJuiHrfRXf_DqcSCHxw/view?usp=sharing'
+  const downloadUrlIntel = 'https://drive.google.com/file/d/17lw_dSDHaILETqu7sJFPv261CQciW2D0/view?usp=sharing'
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
@@ -39,8 +86,15 @@ export default function CleanMacDownload() {
             <p className="text-lg text-gray-600 dark:text-gray-300">
               {status === 'success'
                 ? t('cleanmac.download_page_subtitle_success')
+                : status === 'loading'
+                ? 'Validando pagamento...'
                 : t('cleanmac.download_page_subtitle_error')}
             </p>
+            {status === 'error' && errorMessage && (
+              <div className="mt-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl">
+                <p className="text-sm text-red-800 dark:text-red-200 text-center">{errorMessage}</p>
+              </div>
+            )}
           </header>
 
           <section className="grid gap-6 md:grid-cols-2">

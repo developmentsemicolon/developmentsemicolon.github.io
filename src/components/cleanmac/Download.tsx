@@ -17,9 +17,6 @@ export default function Download() {
           <h2 className="text-[42px] font-bold mb-4 text-gray-900">
             {t('cleanmac.download_title')}
           </h2>
-          <p className="text-lg text-gray-600 mb-[60px]">
-            {t('cleanmac.download_subtitle')}
-          </p>
         </motion.div>
 
         <motion.div
@@ -55,17 +52,29 @@ export default function Download() {
               </span>
             </div>
             
-            {/* Download button */}
-            <motion.a
-              href="https://buy.stripe.com/test_aFa5kC99j6YT5Zt7w25Vu00"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-10 py-[18px] bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-xl font-semibold text-lg shadow-[0_4px_15px_rgba(139,92,246,0.4)] transition-all duration-300 hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(139,92,246,0.5)]"
-              whileHover={{ y: -2 }}
-            >
-              <span>{t('cleanmac.download_btn')}</span>
-              <span className="text-lg">↓</span>
-            </motion.a>
+            {/* Download buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <motion.a
+                href="https://buy.stripe.com/test_aFa5kC99j6YT5Zt7w25Vu00"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 px-8 py-[18px] bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-xl font-semibold text-lg shadow-[0_4px_15px_rgba(139,92,246,0.4)] transition-all duration-300 hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(139,92,246,0.5)]"
+                whileHover={{ y: -2 }}
+              >
+                <span>{t('cleanmac.download_silicon')}</span>
+                <span className="text-lg">↓</span>
+              </motion.a>
+              <motion.a
+                href="https://buy.stripe.com/test_aFa5kC99j6YT5Zt7w25Vu00"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 px-8 py-[18px] bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-xl font-semibold text-lg shadow-[0_4px_15px_rgba(139,92,246,0.4)] transition-all duration-300 hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(139,92,246,0.5)]"
+                whileHover={{ y: -2 }}
+              >
+                <span>{t('cleanmac.download_intel')}</span>
+                <span className="text-lg">↓</span>
+              </motion.a>
+            </div>
             
             {/* Note */}
             <p className="mt-5 text-sm text-gray-600 italic">
