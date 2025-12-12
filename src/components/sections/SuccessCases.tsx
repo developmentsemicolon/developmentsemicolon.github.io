@@ -23,7 +23,7 @@ export default function SuccessCases() {
         <div className="flex flex-col items-center justify-between h-full gap-4">
           <div className="h-16 w-full flex items-center justify-center">
             {caseItem.id === 'goprimy' ? (
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 grayscale group-hover:grayscale-0 transition-all duration-300">
                 <div className="w-9 h-9 bg-gradient-to-br from-emerald-500 via-emerald-600 to-emerald-700 rounded-lg flex items-center justify-center shadow-lg shadow-emerald-500/30">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -52,9 +52,7 @@ export default function SuccessCases() {
               <img
                 src={caseItem.companyLogo}
                 alt={caseItem.companyName}
-                className={`max-h-12 w-auto object-contain transition-all duration-300 ${
-                  caseItem.id === 'cleanmac' ? '' : 'filter grayscale group-hover:grayscale-0'
-                }`}
+                className="max-h-12 w-auto object-contain transition-all duration-300 grayscale group-hover:grayscale-0"
                 loading="lazy"
               />
             )}

@@ -16,21 +16,6 @@ export interface SuccessCase {
 
 export const successCases: SuccessCase[] = [
   {
-    id: 'cleanmac',
-    companyName: 'CleanMac App',
-    companyLogo: '/images/cleanmac-logo.png',
-    website: '/cleanmacapp',
-    industry: 'Desktop App',
-    projectType: 'macOS Application',
-    description: {
-      en: 'Free Mac cleanup tool with Chrome extension integration',
-      pt: 'Ferramenta gratuita de limpeza para Mac com integração de extensão Chrome',
-      es: 'Herramienta gratuita de limpieza para Mac con integración de extensión Chrome'
-    },
-    technologies: ['macOS', 'Swift', 'Chrome Extension', 'System Cleanup'],
-    featured: false
-  },
-  {
     id: 'deepread',
     companyName: 'Deepread',
     companyLogo: 'https://devlfmd.github.io/semicolon/images/deepread-logo.png',
@@ -58,6 +43,21 @@ export const successCases: SuccessCase[] = [
       es: 'Plataforma inteligente de generación y gestión de leads'
     },
     technologies: ['React', 'Node.js', 'PostgreSQL', 'AI Integration'],
+    featured: false
+  },
+  {
+    id: 'cleanmac',
+    companyName: 'CleanMac App',
+    companyLogo: 'https://developmentsemicolon.github.io/images/cleanmac-logo.png',
+    website: 'https://developmentsemicolon.github.io/cleanmacapp',
+    industry: 'Desktop App',
+    projectType: 'macOS Application',
+    description: {
+      en: 'Free Mac cleanup tool with Chrome extension integration',
+      pt: 'Ferramenta gratuita de limpeza para Mac com integração de extensão Chrome',
+      es: 'Herramienta gratuita de limpieza para Mac con integración de extensión Chrome'
+    },
+    technologies: ['macOS', 'Swift', 'Chrome Extension', 'System Cleanup'],
     featured: false
   },
   {
@@ -168,7 +168,7 @@ export const successCases: SuccessCase[] = [
   {
     id: 'goprimy',
     companyName: 'GoPrimy',
-    companyLogo: '/images/goprimy-logo.svg',
+    companyLogo: 'https://devlfmd.github.io/semicolon/images/goprimy-logo.svg',
     website: 'https://goprimy.com',
     industry: 'SaaS',
     projectType: 'Software Platform',
@@ -179,6 +179,6 @@ export const successCases: SuccessCase[] = [
     },
     technologies: ['Web Platform', 'SaaS', 'Modern Tech'],
     featured: false
-  }
+  },
 ];
 

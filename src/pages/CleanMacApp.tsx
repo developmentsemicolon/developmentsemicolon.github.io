@@ -4,6 +4,7 @@ import CleanMacNavbar from '../components/cleanmac/Navbar'
 import CleanMacFooter from '../components/cleanmac/Footer'
 import Hero from '../components/cleanmac/Hero'
 import Features from '../components/cleanmac/Features'
+import Screenshots from '../components/cleanmac/Screenshots'
 import Comparisons from '../components/cleanmac/Comparisons'
 import Pricing from '../components/cleanmac/Pricing'
 import Download from '../components/cleanmac/Download'
@@ -126,6 +127,7 @@ export default function CleanMacApp() {
       <main>
         <Hero />
         <Features />
+        <Screenshots />
         <Comparisons />
         <Pricing />
         <Download />
