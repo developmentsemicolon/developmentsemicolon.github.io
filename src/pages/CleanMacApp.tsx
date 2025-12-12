@@ -16,11 +16,11 @@ export default function CleanMacApp() {
   useEffect(() => {
     const origin = window?.location?.origin || 'https://cleanmac.app'
     const pageUrl = `${origin}/cleanmacapp`
-    const title = 'CleanMac App | alternativa CleanMyMac, limpar cache e otimizar macOS'
+    const title = 'CleanMac App | Clean cache and optimize macOS'
     const description =
-      'CleanMac App é uma alternativa rápida e transparente ao CleanMyMac: limpa caches, logs, arquivos temporários e navegador em 1 clique. Sem anúncios, sem rastreamento e com pagamento único.'
+      'CleanMac App is a fast and transparent alternative: clean caches, logs, temporary files and browser in 1 click. No ads, no tracking and with a one-time payment.'
     const keywords =
-      'clean my mac, cleanmymac alternative, otimizar mac, limpar mac, limpar cache macOS, mac cleaner, limpar armazenamento mac, macbook lento, limpar navegador mac'
+      'clean my mac, cleanmymac alternative, clean cache, clean logs, clean temporary files, clean browser, clean storage, clean macbook, clean browser mac'
 
     const upsertMeta = (attr: 'name' | 'property', key: string, content: string) => {
       let tag = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`)
