@@ -55,7 +55,7 @@ export default function Download() {
             {/* Download buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.a
-                href="https://buy.stripe.com/test_aFa5kC99j6YT5Zt7w25Vu00"
+                href="https://buy.stripe.com/aFa5kC99j6YT5Zt7w25Vu00"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-8 py-[18px] bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-xl font-semibold text-lg shadow-[0_4px_15px_rgba(139,92,246,0.4)] transition-all duration-300 hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(139,92,246,0.5)]"
@@ -65,7 +65,7 @@ export default function Download() {
                 <span className="text-lg">↓</span>
               </motion.a>
               <motion.a
-                href="https://buy.stripe.com/test_aFa5kC99j6YT5Zt7w25Vu00"
+                href="https://buy.stripe.com/aFa5kC99j6YT5Zt7w25Vu00"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-8 py-[18px] bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-xl font-semibold text-lg shadow-[0_4px_15px_rgba(139,92,246,0.4)] transition-all duration-300 hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(139,92,246,0.5)]"

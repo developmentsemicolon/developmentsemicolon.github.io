@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { useEffect } from 'react'
 
-const STRIPE_PAYMENT_LINK = 'https://buy.stripe.com/test_aFa5kC99j6YT5Zt7w25Vu00'
+const STRIPE_PAYMENT_LINK = 'https://buy.stripe.com/aFa5kC99j6YT5Zt7w25Vu00'
 
 export default function Pricing() {
   const { t } = useTranslation()

@@ -14,6 +14,16 @@ interface StripeSession {
   error?: {
     message: string
   }
+  downloads?: {
+    arm64: string
+    intel: string
+  }
+}
+
+// Fallback links (atualizados para os novos URLs)
+const fallbackDownloadUrls = {
+  arm64: 'https://drive.google.com/file/d/1KmjvyW2r82TSGY1SNH8FgHrzLQiM86jP/view?usp=sharing',
+  intel: 'https://drive.google.com/file/d/1DsoR0dVY5VXpmY7PrpAxGnmY8WaYT9UR/view?usp=sharing'
 }
 
 export default function CleanMacDownload() {
@@ -22,6 +32,7 @@ export default function CleanMacDownload() {
   const [searchParams] = useSearchParams()
   const [status, setStatus] = useState<Status>('loading')
   const [errorMessage, setErrorMessage] = useState<string>('')
+  const [downloadUrls, setDownloadUrls] = useState<{ arm64: string; intel: string } | null>(null)
 
   const sessionId = useMemo(() => searchParams.get('session_id') || '', [searchParams])
 
@@ -53,6 +64,12 @@ export default function CleanMacDownload() {
         if (data.payment_status === 'paid' && data.status === 'complete') {
           setStatus('success')
           setErrorMessage('')
+          // Usar links da API se disponíveis, caso contrário usar fallback
+          if (data.downloads) {
+            setDownloadUrls(data.downloads)
+          } else {
+            setDownloadUrls(fallbackDownloadUrls)
+          }
         } else {
           setStatus('error')
           setErrorMessage(t('cleanmac.download_page_error_payment_not_confirmed'))
@@ -69,10 +86,11 @@ export default function CleanMacDownload() {
     }
 
     validatePayment()
-  }, [sessionId])
+  }, [sessionId, t])
 
-  const downloadUrlAppleSilicon = 'https://drive.google.com/file/d/1fL-IPAgVGCaLqaJuiHrfRXf_DqcSCHxw/view?usp=sharing'
-  const downloadUrlIntel = 'https://drive.google.com/file/d/17lw_dSDHaILETqu7sJFPv261CQciW2D0/view?usp=sharing'
+  // Usar links da API se disponíveis, caso contrário usar fallback
+  const downloadUrlAppleSilicon = downloadUrls?.arm64 || fallbackDownloadUrls.arm64
+  const downloadUrlIntel = downloadUrls?.intel || fallbackDownloadUrls.intel
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">

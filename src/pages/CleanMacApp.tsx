@@ -90,7 +90,7 @@ export default function CleanMacApp() {
         ratingValue: '4.9',
         ratingCount: '120000',
       },
-      downloadUrl: 'https://buy.stripe.com/test_aFa5kC99j6YT5Zt7w25Vu00',
+      downloadUrl: 'https://buy.stripe.com/aFa5kC99j6YT5Zt7w25Vu00',
       softwareVersion: '1.0.0',
       image: `${origin}/images/cleanmac-logo.png`,
       description,
