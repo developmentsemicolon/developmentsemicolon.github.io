@@ -2,7 +2,14 @@ import { useEffect } from 'react'
 
 type FaviconType = 'cleanmac' | 'default'
 
-const cleanmacFavicons = [
+interface FaviconConfig {
+  rel: string
+  href: string
+  type?: string
+  sizes?: string
+}
+
+const cleanmacFavicons: FaviconConfig[] = [
   // Standard favicons
   { rel: 'icon', type: 'image/x-icon', href: '/cleanmacapp/favicon/favicon.ico' },
   { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/cleanmacapp/favicon/favicon-16x16.png' },
@@ -25,7 +32,7 @@ const cleanmacFavicons = [
   { rel: 'manifest', href: '/cleanmacapp/favicon/manifest.json' },
 ]
 
-const defaultFavicons = [
+const defaultFavicons: FaviconConfig[] = [
   { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
   { rel: 'alternate icon', href: '/favicon.svg' },
 ]
