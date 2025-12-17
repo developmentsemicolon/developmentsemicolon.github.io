@@ -210,5 +210,20 @@ export const successCases: SuccessCase[] = [
     technologies: ['iOS', 'Mobile App', 'Streaming', 'Podcast'],
     featured: false
   },
+  {
+    id: 'insuperavel-lite',
+    companyName: 'Insuperável Lite',
+    companyLogo: 'https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/e1/9a/eb/e19aebcb-3b6b-4ddd-40c7-5fb852527877/AppIcon-0-0-1x_U007emarketing-0-0-0-4-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/400x400ia-75.webp',
+    website: 'https://apps.apple.com/br/app/insuper%C3%A1vel-lite/id1598897691',
+    industry: 'Media/Radio',
+    projectType: 'iOS App',
+    description: {
+      en: 'Optimized radio app for the best Brazilian radio experience. Live programming all day with humor, information, tips, positive messages and news from Brazil, the US and the world',
+      pt: 'App otimizado de rádio para a melhor experiência de rádio brasileira. Programação ao vivo o dia todo com bom humor, informações, dicas, mensagens positivas e notícias do Brasil, dos EUA e do mundo',
+      es: 'App de radio optimizado para la mejor experiencia de radio brasileña. Programación en vivo todo el día con buen humor, información, consejos, mensajes positivos y noticias de Brasil, EE.UU. y el mundo'
+    },
+    technologies: ['iOS', 'Mobile App', 'Streaming', 'Radio'],
+    featured: false
+  },
 ];
 
