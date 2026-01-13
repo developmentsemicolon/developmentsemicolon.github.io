@@ -181,6 +181,21 @@ export const successCases: SuccessCase[] = [
     featured: false
   },
   {
+    id: 'insight-food',
+    companyName: 'Insight Food',
+    companyLogo: 'https://insightfood.netlify.app/_next/image?url=%2Flogo.png&w=64&q=75',
+    website: 'https://insightfood.netlify.app/',
+    industry: 'Logistics/Delivery',
+    projectType: 'Delivery Platform',
+    description: {
+      en: 'Logistics platform connecting delivery drivers and businesses in Vale do Aço, offering complete management, GPS tracking and job opportunities',
+      pt: 'Plataforma de logística que conecta motoboys e estabelecimentos no Vale do Aço, oferecendo gestão completa, rastreamento GPS e oportunidades de trabalho',
+      es: 'Plataforma de logística que conecta motociclistas y establecimientos en Vale do Aço, ofreciendo gestión completa, rastreo GPS y oportunidades de trabajo'
+    },
+    technologies: ['Next.js', 'React', 'Mobile App', 'GPS Tracking', 'Web Platform'],
+    featured: false
+  },
+  {
     id: 'dalton',
     companyName: 'Dalton - Color Vision Assistant',
     companyLogo: 'https://lh3.googleusercontent.com/MeS2L41Oz1nLZei6XDRCk_On-6094tC-fT0WyhJDKercd103s-w-lkACbCsFSEewt2_t39uo8RceKvVbHFBbShrra6M=s120',
@@ -193,36 +208,6 @@ export const successCases: SuccessCase[] = [
       es: 'Herramienta profesional de ajuste de colores para deficiencias de visión de colores. Mejora la accesibilidad web para protanopia, deuteranopia, tritanopia y más.'
     },
     technologies: ['Chrome Extension', 'Accessibility', 'Color Vision'],
-    featured: false
-  },
-  {
-    id: 'insuperavel',
-    companyName: 'Insuperável',
-    companyLogo: 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f0/6c/8e/f06c8e67-4c39-a9d7-564b-7d1d1f9beaa2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/400x400ia-75.webp',
-    website: 'https://apps.apple.com/br/app/insuper%C3%A1vel/id1487091233',
-    industry: 'Media/Radio',
-    projectType: 'iOS App',
-    description: {
-      en: 'Content app for Brazilian immigrant community in the US with audio and video programming, listener community, business directory and offline podcasts',
-      pt: 'App de conteúdo para comunidade imigrante brasileira nos EUA com programação em áudio e vídeo, comunidade de ouvintes, catálogo de empresas e podcasts offline',
-      es: 'App de contenido para comunidad inmigrante brasileña en EE.UU. con programación en audio y video, comunidad de oyentes, directorio de empresas y podcasts offline'
-    },
-    technologies: ['iOS', 'Mobile App', 'Streaming', 'Podcast'],
-    featured: false
-  },
-  {
-    id: 'insuperavel-lite',
-    companyName: 'Insuperável Lite',
-    companyLogo: 'https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/e1/9a/eb/e19aebcb-3b6b-4ddd-40c7-5fb852527877/AppIcon-0-0-1x_U007emarketing-0-0-0-4-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/400x400ia-75.webp',
-    website: 'https://apps.apple.com/br/app/insuper%C3%A1vel-lite/id1598897691',
-    industry: 'Media/Radio',
-    projectType: 'iOS App',
-    description: {
-      en: 'Optimized radio app for the best Brazilian radio experience. Live programming all day with humor, information, tips, positive messages and news from Brazil, the US and the world',
-      pt: 'App otimizado de rádio para a melhor experiência de rádio brasileira. Programação ao vivo o dia todo com bom humor, informações, dicas, mensagens positivas e notícias do Brasil, dos EUA e do mundo',
-      es: 'App de radio optimizado para la mejor experiencia de radio brasileña. Programación en vivo todo el día con buen humor, información, consejos, mensajes positivos y noticias de Brasil, EE.UU. y el mundo'
-    },
-    technologies: ['iOS', 'Mobile App', 'Streaming', 'Radio'],
     featured: false
   },
 ];
