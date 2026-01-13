@@ -188,7 +188,7 @@ export const successCases: SuccessCase[] = [
     industry: 'Logistics/Delivery',
     projectType: 'Delivery Platform',
     description: {
-      en: 'Logistics platform connecting delivery drivers and businesses in Vale do Aço, offering complete management, GPS tracking and job opportunities',
+      en: 'Logistics platform connecting delivery drivers and businesses in Vale do Aço, offering complete management, GPS tracking and job opportunities ',
       pt: 'Plataforma de logística que conecta motoboys e estabelecimentos no Vale do Aço, oferecendo gestão completa, rastreamento GPS e oportunidades de trabalho',
       es: 'Plataforma de logística que conecta motociclistas y establecimientos en Vale do Aço, ofreciendo gestión completa, rastreo GPS y oportunidades de trabajo'
     },
