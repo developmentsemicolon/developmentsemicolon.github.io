@@ -66,3 +66,6 @@ export default function ImageModal({ selectedImage, onClose }: ImageModalProps) 
 
 
 
+
+
+

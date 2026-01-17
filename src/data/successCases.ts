@@ -210,5 +210,20 @@ export const successCases: SuccessCase[] = [
     technologies: ['Chrome Extension', 'Accessibility', 'Color Vision'],
     featured: false
   },
+  {
+    id: 'intelligen-docs',
+    companyName: 'InteligenDocs.ai',
+    companyLogo: 'https://devlfmd.github.io/semicolon/images/intelligen-docs-logo.png',
+    website: 'https://glowing-meerkat-f606bb.netlify.app/',
+    industry: 'AI/ML',
+    projectType: 'Document Intelligence Platform',
+    description: {
+      en: 'AI-powered document intelligence platform that transforms PDFs into queryable knowledge bases',
+      pt: 'Plataforma de inteligência documental com IA que transforma PDFs em bases de conhecimento consultáveis',
+      es: 'Plataforma de inteligencia documental con IA que transforma PDFs en bases de conocimiento consultables'
+    },
+    technologies: ['Google Gemini', 'Cloudflare R2', 'BullMQ', 'RAG', 'AI', 'Node.js'],
+    featured: false
+  },
 ];
 
