@@ -48,6 +48,10 @@ export default function SuccessCases() {
                   GoPrimy
                 </span>
               </div>
+            ) : caseItem.id === 'intelligen-docs' ? (
+              <span className="text-lg font-bold text-slate-900 dark:text-slate-100 tracking-tight text-center">
+                InteligenDocs.ai
+              </span>
             ) : (
               <>
                 <img
