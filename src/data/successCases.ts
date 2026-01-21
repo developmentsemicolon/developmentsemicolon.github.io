@@ -214,7 +214,7 @@ export const successCases: SuccessCase[] = [
     id: 'intelligen-docs',
     companyName: 'InteligenDocs.ai',
     companyLogo: 'https://devlfmd.github.io/semicolon/images/intelligen-docs-logo.png',
-    website: 'https://glowing-meerkat-f606bb.netlify.app/',
+    website: 'https://inteligendocs.netlify.app',
     industry: 'AI/ML',
     projectType: 'Document Intelligence Platform',
     description: {
